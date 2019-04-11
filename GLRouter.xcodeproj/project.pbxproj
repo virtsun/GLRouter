@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F171EBB7225EE1EA00227A13 /* GLRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBB5225EE1EA00227A13 /* GLRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F171EBB8225EE1EA00227A13 /* GLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F171EBB6225EE1EA00227A13 /* GLRouter.m */; };
-		F171EBBA225EE1FE00227A13 /* GLRoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBB9225EE1FE00227A13 /* GLRoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F171EBBC225EE39E00227A13 /* GLRoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBBB225EE39E00227A13 /* GLRoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F171EBBF225EE3A700227A13 /* GLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F171EBBD225EE3A700227A13 /* GLRouter.m */; };
+		F171EBC0225EE3A700227A13 /* GLRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = F171EBBE225EE3A700227A13 /* GLRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F16AE910222E69150025DF66 /* GLRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16AE914222E69150025DF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F171EBB5225EE1EA00227A13 /* GLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLRouter.h; path = router/GLRouter.h; sourceTree = SOURCE_ROOT; };
-		F171EBB6225EE1EA00227A13 /* GLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLRouter.m; path = router/GLRouter.m; sourceTree = SOURCE_ROOT; };
-		F171EBB9225EE1FE00227A13 /* GLRoutable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLRoutable.h; path = protocol/GLRoutable.h; sourceTree = SOURCE_ROOT; };
+		F171EBBB225EE39E00227A13 /* GLRoutable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRoutable.h; sourceTree = "<group>"; };
+		F171EBBD225EE3A700227A13 /* GLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRouter.m; sourceTree = "<group>"; };
+		F171EBBE225EE3A700227A13 /* GLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRouter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		F16AE91F222E696D0025DF66 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				F171EBB9225EE1FE00227A13 /* GLRoutable.h */,
+				F171EBBB225EE39E00227A13 /* GLRoutable.h */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -68,8 +68,8 @@
 		F16AE920222E69760025DF66 /* router */ = {
 			isa = PBXGroup;
 			children = (
-				F171EBB5225EE1EA00227A13 /* GLRouter.h */,
-				F171EBB6225EE1EA00227A13 /* GLRouter.m */,
+				F171EBBE225EE3A700227A13 /* GLRouter.h */,
+				F171EBBD225EE3A700227A13 /* GLRouter.m */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -81,8 +81,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F171EBB7225EE1EA00227A13 /* GLRouter.h in Headers */,
-				F171EBBA225EE1FE00227A13 /* GLRoutable.h in Headers */,
+				F171EBC0225EE3A700227A13 /* GLRouter.h in Headers */,
+				F171EBBC225EE39E00227A13 /* GLRoutable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F171EBB8225EE1EA00227A13 /* GLRouter.m in Sources */,
+				F171EBBF225EE3A700227A13 /* GLRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +288,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GLRouter/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +312,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GLRouter/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
